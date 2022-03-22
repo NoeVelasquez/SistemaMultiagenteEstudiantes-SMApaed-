@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAPA</title>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+
+    <!-- Fontawesome Link -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 ">
+{{{navegacion}}}
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    aria-current="page">Dashboard</a>
+
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="container-fluid bg-green-300">
+        <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-8">
+            <div class="flex justify-start lg:flex-1">
+                <a href="/src/views/home.html">
+                    <span class="sr-only">HOME</span>
+                    <img src="https://img.icons8.com/ios/50/000000/home--v4.png" />
+                </a>
+            </div>
+            <form class="flex justify-evenly ">
+                <input class="form-control px-4" type="search" placeholder="Search" aria-label="Buscar">
+                <button class="btn btn-outline font-medium text-gray-500" type="submit">BUSCAR</button>
+            </form>
+            <nav class="flex-py-5">
+                <a href="/derivadas" class="text-base font-medium text-gray-500 hover:text-gray-900"> DERIVADAS </a>
+                <a href="/Funciones" class="text-base font-medium text-gray-500 hover:text-gray-900"> FUNCIONES</a>
+            </nav>
+            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <a href="/create"
+                    class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Acceder</a>
+                <a href="/estudiante"
+                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-indigo-700">Inscríbete
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    {{{body}}}
+
+</body>
+
+</html>

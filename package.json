@@ -1,0 +1,25 @@
+{
+  "name": "smapa",
+  "version": "1.0.0",
+  "description": "Sistema Multiagente Pedagogico Adaptativo para apoyar la enseñanza en derivadas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Noemi-Vera",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "express-myconnection": "^1.0.4",
+    "flowbite": "^1.3.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {}
+}
