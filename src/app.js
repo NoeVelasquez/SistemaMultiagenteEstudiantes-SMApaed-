@@ -23,13 +23,13 @@ app.engine('.html', engine({
 }));
 app.set('view engine', '.html');
 //conexion a la base de datos
-app.use(myconnection(mysql, {
+/*app.use(myconnection(mysql, {
     host:'localhost',
     user:'root',
     password:'',
     port:3306,
-    database: 'smapa'
-}/*,'single'*/));
+    database: "", //'smapa'
+},'single'));*/
 
 app.listen(app.get('port'),()=>{
     console.log('Listening on port', app.get('port'));
